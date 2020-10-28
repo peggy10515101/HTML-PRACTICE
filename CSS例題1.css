@@ -1,8 +1,35 @@
-body{background-color: cornflowerblue;}
-div{width: 500px;padding: 30px;border: 1px;color:white;}
-ul{width: 500px;padding: 30px;border: 1px;color: blue;}
+div{width: 500px;padding: 30px;border: 1px;color:rgb(33, 199, 55);}
+ul{width: 500px;padding: 30px;border: 1px;color: rgb(50, 50, 231);}
 img{border-radius: 10px;}
 a:link{color: yellow;}
 a:visited{color: salmon;}
 a:hover{color:red;}
 a:active{color: turquoise;}
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+    body {
+        background-color: black;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 800px){
+    body {
+        background-color: greenyellow;
+    }
+}
+@keyframes myanimation {
+    0%   {background:red; left:50px; top:100px;}
+    25%  {background:rgb(247, 155, 17); left:90px; top:10px;}
+    50%  {background:rgb(251, 255, 21); left:260px; top:210px;}
+    75%  {background:green; left:190px; top:330px;}
+    100% {background:red; left:250px; top:400px;}
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    border: 1px dotted black;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    animation: myanimation 2s ease-in-out alternate infinite;
+}
