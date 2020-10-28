@@ -1,0 +1,8 @@
+body{background-color: cornflowerblue;}
+div{width: 500px;padding: 30px;border: 1px;color:white;}
+ul{width: 500px;padding: 30px;border: 1px;color: blue;}
+img{border-radius: 10px;}
+a:link{color: yellow;}
+a:visited{color: salmon;}
+a:hover{color:red;}
+a:active{color: turquoise;}
